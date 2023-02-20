@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segunda parte tabela</title>
+    <style>
+        table,tr td{
+            border: solid 1px black;
+        }
+        td{
+            width: 100px;
+        }
+        header{
+            text-align: center;
+            color: white;
+        }
+        body{background-color: rgb(150, 150, 218); font: normal 18pt arial}
+        section{
+            background-color: white;
+            width: 650px;
+            height: 420px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px black;
+            margin: auto;
+        }
+       table{
+        margin: auto;
+       }
+       footer{
+        text-align: center;
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Teste RZ sistemas
+        </h1>
+    </header>
+   <section>
+    <br>
+    <p>Digite algo:
+        <input type="text" name="campotxt" id="txt1">
+        <input type="text" name="campotxt2" id="txt2">
+    </p>
+    <input type="button" name="btn1" id="btn1" value="escreva">
+    <input type="button" name="btn2" id="btn2" value="remover">
+    
+    <div class="tabela">
+        <br>
+        <table id="tab">
+        <tr>
+            <td>Código</td>
+            <td>Nome</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>código1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Código2</td>
+        </tr>
+    </table>
+</div>
+</section>
+<footer>
+    <p>&copy;Gabriel Batemarque</p>
+</footer>
+<script>
+        var btn1 = window.document.getElementById('btn1');
+        var txt1 = window.document.getElementById('txt1');
+        var txt2 = window.document.getElementById('txt2');
+        var btn2 = window.document.getElementById('btn2');
+        var texto1 = String(txt1.value);
+        btn1.addEventListener('click', escreva);
+            var tab = window.document.getElementById('tab')
+        
+            function escreva(){
+              //  var ln = document.createElement('tr');
+              var ln = document.createElement('tr');
+              var cn = document.createElement('td');
+              var cn2 = document.createElement('td');
+                cn.textContent = txt1.value;
+                cn2.textContent = txt2.value;
+                tab.appendChild(ln).appendChild(cn);
+                tab.appendChild(ln).appendChild(cn2);
+            }
+            btn2.addEventListener('click', remova)
+            function remova(){
+                tab.removeChild(tab.lastElementChild);
+            }
+            
+        
+</script>
+</body>
+</html>

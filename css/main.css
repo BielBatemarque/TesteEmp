@@ -1,0 +1,79 @@
+.rzlogo{
+    width: 50px;
+}
+#nav1{
+    background-color:#142742 ;
+    color: white;
+}
+.rzbanner{
+    text-align: center;
+}
+.rztextos h1{
+    text-align: center;
+}
+.rztextos p {
+    font-size: 35px;
+    color: rgb(100, 100, 100);
+}
+.rzimg{
+    width: 180px;
+    text-align: center;
+}
+#row1{
+    text-align: center;
+}
+#row2{
+    text-align: center;
+}
+#row1 h2{
+    color: blue;
+}
+#row1 p{
+    text-align: justify;
+    color: blue;
+}
+#row2 h2{
+    color: blue;
+}
+#row2 p{
+    text-align: justify;
+    color: blue;
+    max-height: 160px;
+}
+.divisão{
+    border-bottom: none;
+    border-top: none;
+    border-right: solid 1px #4e4e4e;
+    clear: none;
+    height: 45px;
+    width: 0;
+}
+#rzsistemas{
+    width: 150px;
+}
+#btn1, #btn2, #btn3, #btn4 , #btn05, #btn6{
+    opacity: 50%;
+    border: solid 1px;
+    border-radius: 20px;
+    position: absolute;
+   margin-top: -300px;
+   margin-left: -40px;
+}
+#rmv1, #rmv2, #rmv3, #rmv5, #rmv6{
+    opacity: 50%;
+    border: solid 1px;
+    border-radius: 20px;
+    position: absolute;
+   margin-top: -400px;
+   margin-left: 90px;
+   background-color: red;
+} 
+#rmv4{
+    opacity: 50%;
+    border: solid 1px;
+    border-radius: 20px;
+    position: absolute;
+   margin-top: -375px;
+   margin-left: 90px;
+   background-color: red;
+}
